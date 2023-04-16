@@ -13,4 +13,6 @@ contract Attack {
     function attack() public payable {
         auctionContract.bid{value: msg.value}();
     }
+
+    // receive() external payable {}
 }
